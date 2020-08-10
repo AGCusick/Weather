@@ -53,7 +53,7 @@ function getLocalStorage(){
     getLocationData();
 }
         async function getLocationData(){
-            let forward = `https://api.opencagedata.com/geocode/v1/json?q=${typeSearch.value}&countrycode=us&key=6b1c99ab15774d5d9a4e9655dc99a939`;
+            let forward = `https://api.opencagedata.com/geocode/v1/json?q=${typeSearch.value}&countrycode=us&your key=`;
 
             let fd = await fetch(forward);
             let data = await fd.json();
@@ -70,7 +70,7 @@ function getLocalStorage(){
             lat = data.results[0].bounds.northeast.lat;
             long = data.results[0].bounds.northeast.lng;
             
-              const api = `https://api.darksky.net/forecast/4b124f2c95e3ff9914040209d9010fa5/${lat},${long} `;
+              const api = `https://api.darksky.net/forecast/your key/${lat},${long} `;
 
               let info = await fetch(api);
               let weatherData = await info.json();
