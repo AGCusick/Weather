@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+#mapid { 
+    position: relative;
+    float: right;
+    height: 300px;
+    width: 400px;
+    margin-right: 10%;
+    margin-top: 5%;
+    }
+
+.alerts{
+    background-color: rgb(167, 67, 67);
+    padding: 0 15px;
+    color: #fff;
+    font-size: .8rem;
+}
+.location{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.time{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.date{
+    text-align: center;
+    font-weight: 600;
+}
+
+.current-info{
+    text-align: left;
+    height: 170px;
+    line-height: 40px;
+    width: 200px;
+
+}
+
+.current-icon{
+    position: relative;
+    float: right;
+    right: 10%;
+    box-shadow: 5px 5px 8px rgb(229, 238, 208);
+    width: 150px;
+    height: 150px;
+}
+.icon-one, .icon-two, .icon-three, .icon-four, .icon-five{
+    position: relative;
+    float: right;
+    right: 10%;
+    margin-top: 10%;
+    box-shadow: 5px 5px 8px rgb(229, 238, 208);
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+.container-small{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: center;
+    background-image: linear-gradient(to right top, #353874, #3b4480, #42508c, #495c97, #5069a3, #566ea9, #5d74b0, #6379b6, #6a78b8, #7178b9, #7877ba, #7f76ba); 
+    border-radius: 10px;
+    color: rgb(235, 233, 225);
+    font-weight: 700;
+    box-shadow: 3px 3px 3px rgb(114, 93, 116);
+
+}
+
+
+h3{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 20%;
+    color: rgb(235, 233, 225);
+    border-radius: 16px;
+    background-color: #353874;
+}
+
+.forecast{
+    text-align: left;
+    line-height: 40px;
+}
+
+.day-one h4{
+    margin-bottom: 18px;
+}
+.day-one p{
+    line-height: 24px;
+}
+
+fieldset{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width: 1000px){
+    .current-icon{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .icon-one, .icon-two, .icon-three, .icon-four, .icon-five{
+        width: 120px;
+        height: 120px;
+    }
+
+    .container-small{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container-small{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .container-md{
+        position: relative;
+        left: 0;
+        width: 90%;
+        margin: 20px auto;
+    
+    }
+
+    .current-icon{
+        margin-left: 40px;
+    }
+
+    .icon-one, .icon-two, .icon-three, .icon-four, 
+    .icon-five, .current-icon{
+        left: 3%;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        bottom: 0;
+    }
+
+}
+    @media screen and (max-width: 500px){
+        .current-weather {
+            height: 400px;
+        }
+
+        .icon-one, .icon-two, .icon-three, .icon-four, 
+        .icon-five, .current-icon{
+            width: 100px;
+            height: 100px;
+        }
+     .current-info{
+         margin-left: 0px;
+     }
+        .location{
+            font-size: 20px;
+        }
+        .container-small{
+            box-shadow: none;
+        }
+     
+    }
+  
+
+

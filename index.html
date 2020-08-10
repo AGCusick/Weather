@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo&family=Cinzel:wght@700&family=Roboto+Condensed&display=swap"
+    rel="stylesheet">
+
+  <title>Weather US</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Weather US</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+        <li class="nav-item">
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 search" type="search" placeholder="Enter City, State"
+          aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--Current Weather-->
+  <div class="alerts"></div>
+  <div id="mapid"></div>
+
+  <div class="container-small current-weather">
+    <h5>Current Weather:</h5>
+    <div class="location"></div>
+    <div class="time">
+      <h3>Current Weather<br></h3>
+      Current time
+    </div>
+    <div class="date">
+      7/9/2020
+    </div>
+    <div class="current-icon">
+      <img src="">
+    </div>
+    <div class="current-info">
+      <div class="current-temperature">Current Temp:</div>
+      <div class="current-wind">Wind Speed:</div>
+      <div class="current-direction">Wind Direction:</div>
+      <div class="current-description">Description:</div>
+    </div>
+  </div>
+  </div>
+  <!--Forecast-->
+  <h3>5 Day Forecast</h3>
+  <div class="container-small one">
+    <div class="icon-one five-day-icon">
+      <img src="">
+    </div>
+    <div class="forecast day-one">
+      <div class="five-day">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-small two">
+    <div class="icon-two five-day-icon">
+      <img src="">
+    </div>
+    <div class="forecast day-two">
+      <div class="five-day">
+        <h4>Day 2</h4>
+      </div>
+      <div class="data-high"></div>
+      <div class="data-low"></div>
+      <div class="data-speed"></div>
+      <div class="data-direction"></div>
+      <div class="data-description"></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-small three">
+    <div class="icon-three five-day-icon">
+      <img src="">
+    </div>
+    <div class="forecast day-three">
+      <div class="five-day">
+        <h4>Day 3</h4>
+      </div>
+      <div class="data-high"></div>
+      <div class="data-low"></div>
+      <div class="data-speed"></div>
+      <div class="data-direction"></div>
+      <div class="data-description"></div>
+    </div>
+  </div>
+    <div class="container-small four">
+      <div class="icon-four five-day-icon">
+        <img src="">
+      </div>
+      <div class="forecast day-four">
+        <div class="five-day">
+          <h4>Day 4</h4>
+        </div>
+        <div class="data-high"></div>
+        <div class="data-low"></div>
+        <div class="data-speed"></div>
+        <div class="data-direction"></div>
+        <div class="data-description"></div>
+      </div>
+    </div>
+    <div class="container-small five">
+      <div class="icon-five five-day-icon">
+        <img src="">
+      </div>
+      <div class="forecast day">
+        <div class="five-day">
+          <h4>Day 5</h4>
+        </div>
+        <div class="data-high"></div>
+        <div class="data-low"></div>
+        <div class="data-speed"></div>
+        <div class="data-direction"></div>
+        <div class="data-description"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="lib/momemt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
